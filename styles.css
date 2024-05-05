@@ -1,0 +1,21 @@
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-size: 20vh;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+.bar, .bar-filled {
+    height: 2vh;
+    transition: background-color 0.5s;
+}
+
+.bar-filled {
+    width: 50%;
+    background-color: black;
+}
