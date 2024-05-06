@@ -566,7 +566,8 @@
 
                 switch (this.options.animation) {
                     case 'minimal':
-                        frames = [_ref[i][0],_ref[i][_ref[i].length-1]];
+			if (_ref[i][0] === _ref[i][_ref[i].length-1]) frames = [_ref[i][0]]
+                        else frames = [_ref[i][0],_ref[i][_ref[i].length-1]];
                         if (this.options.directionByDigit) {
                             if (frames[1] < frames[0]) down = true
                         } else {
